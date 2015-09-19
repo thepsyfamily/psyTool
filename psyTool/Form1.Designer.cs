@@ -37,19 +37,19 @@
             this.button3 = new System.Windows.Forms.Button();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.gameserversToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.psyStatsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.linksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.psySteamCommunityToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.psyClanCommunityToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.psyRUSTCommunityToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.socialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.psyTwitterPageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.psyIRCChannelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.gameserversToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.sToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.psyYoutubeChannelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.psyIRCChannelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.psyTwitterPageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.psyFacebookPageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.psyFacebookGroupToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.psyStatsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registerToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.visitThePsyFamilycomToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -143,6 +143,29 @@
             this.menuStrip1.TabIndex = 7;
             this.menuStrip1.Text = "menuStrip1";
             // 
+            // gameserversToolStripMenuItem
+            // 
+            this.gameserversToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.sToolStripMenuItem,
+            this.psyStatsToolStripMenuItem});
+            this.gameserversToolStripMenuItem.Name = "gameserversToolStripMenuItem";
+            this.gameserversToolStripMenuItem.Size = new System.Drawing.Size(41, 20);
+            this.gameserversToolStripMenuItem.Text = "Play";
+            // 
+            // sToolStripMenuItem
+            // 
+            this.sToolStripMenuItem.Name = "sToolStripMenuItem";
+            this.sToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
+            this.sToolStripMenuItem.Text = "[psy] Gameservers";
+            this.sToolStripMenuItem.Click += new System.EventHandler(this.sToolStripMenuItem_Click);
+            // 
+            // psyStatsToolStripMenuItem
+            // 
+            this.psyStatsToolStripMenuItem.Name = "psyStatsToolStripMenuItem";
+            this.psyStatsToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
+            this.psyStatsToolStripMenuItem.Text = "[psy] Stats";
+            this.psyStatsToolStripMenuItem.Click += new System.EventHandler(this.psyStatsToolStripMenuItem_Click);
+            // 
             // linksToolStripMenuItem
             // 
             this.linksToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -186,12 +209,12 @@
             this.socialToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
             this.socialToolStripMenuItem.Text = "Social";
             // 
-            // psyTwitterPageToolStripMenuItem
+            // psyYoutubeChannelToolStripMenuItem
             // 
-            this.psyTwitterPageToolStripMenuItem.Name = "psyTwitterPageToolStripMenuItem";
-            this.psyTwitterPageToolStripMenuItem.Size = new System.Drawing.Size(195, 22);
-            this.psyTwitterPageToolStripMenuItem.Text = "[psy] Twitter Page";
-            this.psyTwitterPageToolStripMenuItem.Click += new System.EventHandler(this.psyTwitterPageToolStripMenuItem_Click);
+            this.psyYoutubeChannelToolStripMenuItem.Name = "psyYoutubeChannelToolStripMenuItem";
+            this.psyYoutubeChannelToolStripMenuItem.Size = new System.Drawing.Size(195, 22);
+            this.psyYoutubeChannelToolStripMenuItem.Text = "[psy] Youtube Channel";
+            this.psyYoutubeChannelToolStripMenuItem.Click += new System.EventHandler(this.psyYoutubeChannelToolStripMenuItem_Click);
             // 
             // psyIRCChannelToolStripMenuItem
             // 
@@ -200,28 +223,12 @@
             this.psyIRCChannelToolStripMenuItem.Text = "[psy] IRC Channel";
             this.psyIRCChannelToolStripMenuItem.Click += new System.EventHandler(this.psyIRCChannelToolStripMenuItem_Click);
             // 
-            // gameserversToolStripMenuItem
+            // psyTwitterPageToolStripMenuItem
             // 
-            this.gameserversToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.sToolStripMenuItem,
-            this.psyStatsToolStripMenuItem});
-            this.gameserversToolStripMenuItem.Name = "gameserversToolStripMenuItem";
-            this.gameserversToolStripMenuItem.Size = new System.Drawing.Size(41, 20);
-            this.gameserversToolStripMenuItem.Text = "Play";
-            // 
-            // sToolStripMenuItem
-            // 
-            this.sToolStripMenuItem.Name = "sToolStripMenuItem";
-            this.sToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
-            this.sToolStripMenuItem.Text = "[psy] Gameservers";
-            this.sToolStripMenuItem.Click += new System.EventHandler(this.sToolStripMenuItem_Click);
-            // 
-            // psyYoutubeChannelToolStripMenuItem
-            // 
-            this.psyYoutubeChannelToolStripMenuItem.Name = "psyYoutubeChannelToolStripMenuItem";
-            this.psyYoutubeChannelToolStripMenuItem.Size = new System.Drawing.Size(195, 22);
-            this.psyYoutubeChannelToolStripMenuItem.Text = "[psy] Youtube Channel";
-            this.psyYoutubeChannelToolStripMenuItem.Click += new System.EventHandler(this.psyYoutubeChannelToolStripMenuItem_Click);
+            this.psyTwitterPageToolStripMenuItem.Name = "psyTwitterPageToolStripMenuItem";
+            this.psyTwitterPageToolStripMenuItem.Size = new System.Drawing.Size(195, 22);
+            this.psyTwitterPageToolStripMenuItem.Text = "[psy] Twitter Page";
+            this.psyTwitterPageToolStripMenuItem.Click += new System.EventHandler(this.psyTwitterPageToolStripMenuItem_Click);
             // 
             // psyFacebookPageToolStripMenuItem
             // 
@@ -237,13 +244,6 @@
             this.psyFacebookGroupToolStripMenuItem.Text = "[psy] Facebook Group";
             this.psyFacebookGroupToolStripMenuItem.Click += new System.EventHandler(this.psyFacebookGroupToolStripMenuItem_Click);
             // 
-            // psyStatsToolStripMenuItem
-            // 
-            this.psyStatsToolStripMenuItem.Name = "psyStatsToolStripMenuItem";
-            this.psyStatsToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
-            this.psyStatsToolStripMenuItem.Text = "[psy] Stats";
-            this.psyStatsToolStripMenuItem.Click += new System.EventHandler(this.psyStatsToolStripMenuItem_Click);
-            // 
             // registerToolStripMenuItem
             // 
             this.registerToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -256,14 +256,14 @@
             // registerToolStripMenuItem1
             // 
             this.registerToolStripMenuItem1.Name = "registerToolStripMenuItem1";
-            this.registerToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.registerToolStripMenuItem1.Size = new System.Drawing.Size(116, 22);
             this.registerToolStripMenuItem1.Text = "Register";
             this.registerToolStripMenuItem1.Click += new System.EventHandler(this.registerToolStripMenuItem1_Click);
             // 
             // visitThePsyFamilycomToolStripMenuItem
             // 
             this.visitThePsyFamilycomToolStripMenuItem.Name = "visitThePsyFamilycomToolStripMenuItem";
-            this.visitThePsyFamilycomToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.visitThePsyFamilycomToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
             this.visitThePsyFamilycomToolStripMenuItem.Text = "Visit";
             this.visitThePsyFamilycomToolStripMenuItem.Click += new System.EventHandler(this.visitThePsyFamilycomToolStripMenuItem_Click);
             // 
@@ -286,7 +286,7 @@
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "psyTool 0.1";
+            this.Text = "psyTool 0.1.1";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
